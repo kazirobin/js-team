@@ -101,14 +101,14 @@ console.log("User decision:", confirmLeave);
 4. Logs everything in `console`
 
 ```javascript
-let userName = prompt("What's your name?");
-let name = prompt("What is your name?");
-let age = prompt("How old are you?");
-alert("Welcome to Day 1!");
-alert("Welcome, " + name + "!");
 console.log("Hi", userName);
 console.log("User Name: " + name);
 console.log("User Age: " + age);
+alert("Welcome to Day 1!");
+alert("Welcome, " + name + "!");
+let userName = prompt("What's your name?");
+let name = prompt("What is your name?");
+let age = prompt("How old are you?");
 let proceed = confirm("Shall we start learning JavaScript?");
 console.log("User said:", proceed);
 ```
