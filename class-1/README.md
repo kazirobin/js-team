@@ -67,24 +67,34 @@
 > 🧪 Playground: [js-team.tiiny.site](https://js-team.tiiny.site)
 
 
-### 🔹 1. Console Log:
+### 🔹 1. Console Log:Output to console
 ```javascript
 console.log("Hello, JavaScript!");
 
 ```
+```javascript
+console.log("User Name: " + name);
+console.log("User Age: " + age);
+```
 
-#### 🔹 2. Alert:
+#### 🔹 2. Alert:Show popup message
 ```javascript
 alert("Welcome to Day 1!");
 ```
+```javascript
+alert("Welcome, " + name + "!");
+```
 
-#### 🔹 3. Prompt:
+#### 🔹 3. Prompt:Ask user input
 ```javascript
 let name = prompt("What is your name?");
 console.log("User name is:", name);
 ```
-
-#### 🔹 4. Confirm:
+```javascript
+let name = prompt("What is your name?");
+let age = prompt("How old are you?");
+```
+#### 🔹 4. Confirm:Confirm action
 ```javascript
 let confirmLeave = confirm("Do you want to leave this page?");
 console.log("User decision:", confirmLeave);
@@ -147,10 +157,10 @@ Happy coding! 🚀
 
 | Task | Code Example |
 |------|--------------|
-| Output to console | `console.log("Hello!");` |
-| Show popup message | `alert("Hi there!");` |
-| Ask user input | `prompt("Enter your name:");` |
-| Confirm action | `confirm("Are you sure?");` |
+|  | `console.log("Hello!");` |
+|  | `alert("Hi there!");` |
+|  | `prompt("Enter your name:");` |
+|  | `confirm("Are you sure?");` |
 
 ---
 
