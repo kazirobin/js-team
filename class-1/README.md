@@ -74,6 +74,9 @@ console.log("Hello, JavaScript!");
 ```
 ```javascript
 console.log("User Name: " + name);
+```
+
+```javascript
 console.log("User Age: " + age);
 ```
 
@@ -91,7 +94,6 @@ let name = prompt("What is your name?");
 console.log("User name is:", name);
 ```
 ```javascript
-let name = prompt("What is your name?");
 let age = prompt("How old are you?");
 ```
 #### 🔹 4. Confirm:Confirm action
@@ -152,15 +154,3 @@ console.log("User Age: " + age);
 - [W3Schools JS Tutorial](https://www.w3schools.com/js/)
 
 Happy coding! 🚀
-
-```
-
-| Task | Code Example |
-|------|--------------|
-|  | `console.log("Hello!");` |
-|  | `alert("Hi there!");` |
-|  | `prompt("Enter your name:");` |
-|  | `confirm("Are you sure?");` |
-
----
-
