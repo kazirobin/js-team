@@ -91,34 +91,26 @@ let confirmLeave = confirm("Do you want to leave this page?");
 console.log("User decision:", confirmLeave);
 ```
 
----
----
 
-## 🧠 Hands-On Coding 
-
-1. Open your browser and press `F12` to open the console.
-2. Try the following lines one by one:
-```js
-alert("Welcome to Day 1!");
-let userName = prompt("What's your name?");
-console.log("Hi", userName);
-let proceed = confirm("Shall we start learning JavaScript?");
-console.log("User said:", proceed);
-```
 ### 📋 **Hands-on Task **
 
 > 👨‍💻 Task: Create a simple script that:
-1. Asks name using `prompt`
-2. Asks age
+1. Open your browser and press `F12` to open the console.
+2. Asks name using `prompt`,Asks age
 3. Shows welcome message using `alert`
 4. Logs everything in `console`
 
 ```javascript
+let userName = prompt("What's your name?");
 let name = prompt("What is your name?");
 let age = prompt("How old are you?");
+alert("Welcome to Day 1!");
 alert("Welcome, " + name + "!");
+console.log("Hi", userName);
 console.log("User Name: " + name);
 console.log("User Age: " + age);
+let proceed = confirm("Shall we start learning JavaScript?");
+console.log("User said:", proceed);
 ```
 
 
