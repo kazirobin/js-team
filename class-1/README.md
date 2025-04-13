@@ -56,7 +56,7 @@
 >  Playground: [js-team.tiiny.site](https://js-team.tiiny.site)
 
 
-### 🔹 1. Console Log:Output to console
+### 🔹 1. Console Log: Output to console
 ```javascript
 console.log("Hello, JavaScript!");
 
@@ -69,7 +69,7 @@ console.log("User Name: " + name);
 console.log("User Age: " + age);
 ```
 
-#### 🔹 2. Alert:Show popup message
+#### 🔹 2. Alert: Show popup message
 ```javascript
 alert("Welcome to Day 1!");
 ```
@@ -77,7 +77,7 @@ alert("Welcome to Day 1!");
 alert("Welcome, " + name + "!");
 ```
 
-#### 🔹 3. Prompt:Ask user input
+#### 🔹 3. Prompt: Ask user input
 ```javascript
 let name = prompt("What is your name?");
 console.log("User name is:", name);
@@ -85,7 +85,7 @@ console.log("User name is:", name);
 ```javascript
 let age = prompt("How old are you?");
 ```
-#### 🔹 4. Confirm:Confirm action
+#### 🔹 4. Confirm: Confirm action
 ```javascript
 let confirmLeave = confirm("Do you want to leave this page?");
 console.log("User decision:", confirmLeave);
