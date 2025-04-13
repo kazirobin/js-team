@@ -61,20 +61,10 @@
 console.log("Hello, JavaScript!");
 
 ```
-```javascript
-console.log("User Name: " + name);
-```
-
-```javascript
-console.log("User Age: " + age);
-```
 
 #### 🔹 2. Alert: Show popup message
 ```javascript
 alert("Welcome to Day 1!");
-```
-```javascript
-alert("Welcome, " + name + "!");
 ```
 
 #### 🔹 3. Prompt: Ask user input
@@ -82,9 +72,7 @@ alert("Welcome, " + name + "!");
 let name = prompt("What is your name?");
 console.log("User name is:", name);
 ```
-```javascript
-let age = prompt("How old are you?");
-```
+
 #### 🔹 4. Confirm: Confirm action
 ```javascript
 let confirmLeave = confirm("Do you want to leave this page?");
