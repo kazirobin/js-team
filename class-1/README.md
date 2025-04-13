@@ -25,17 +25,12 @@
 - [ ] Enable DevTools: Right-click → Inspect → **Console tab**
   - Shortcut: `Ctrl + Shift + I` or `F12`
 
----
-
 ## 🎯 What You’ll Learn Today:
 - Why JavaScript is essential in web development
 - How JS works inside a webpage
 - Difference between `console.log()` and `alert()`
 - How to interact with users using simple input/output
 
----
-
----
 
 ## ❓ Questions & Answers
 
@@ -54,8 +49,6 @@
 
 ### Q5: Can we write JS inside an HTML file?
 **A:** Yes. You can include JS code inside `<script>` tags directly within your HTML file.
-
----
 
 
 
@@ -135,8 +128,6 @@ console.log("User Age: " + age);
 - JS is case-sensitive: `let`, `Let`, and `LET` are different.
 - Start learning by writing small scripts and testing in the console.
 - Not opening DevTools → Emphasize keyboard shortcut: `Ctrl + Shift + I`
-
----
 
 ## 🔗 Useful Resources
 - [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
