@@ -131,14 +131,6 @@ console.log("User Name: " + name);
 console.log("User Age: " + age);
 ```
 
----
-
-### ❗ **Common Mistakes to Watch For :**
-- Typing `console.log` wrong
-- Not opening DevTools → Emphasize keyboard shortcut: `Ctrl + Shift + I`
-
----
-
 
 ## 📝 Extra Tips
 - Typing `console.log` wrong
