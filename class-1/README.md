@@ -141,9 +141,11 @@ console.log("User Age: " + age);
 
 
 ## 📝 Extra Tips
+- Typing `console.log` wrong
 - Always use `console.log()` to debug your code.
 - JS is case-sensitive: `let`, `Let`, and `LET` are different.
 - Start learning by writing small scripts and testing in the console.
+- Not opening DevTools → Emphasize keyboard shortcut: `Ctrl + Shift + I`
 
 ---
 
