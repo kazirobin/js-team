@@ -1,15 +1,5 @@
 # 🚀 Day 1: Introduction to JavaScript Basics
 
----
-
-## 🎯 What You’ll Learn Today:
-- Why JavaScript is essential in web development
-- How JS works inside a webpage
-- Difference between `console.log()` and `alert()`
-- How to interact with users using simple input/output
-
----
-
 ## 📚 Let’s Understand JavaScript
 
 ### 🔸 What is JavaScript?
@@ -33,6 +23,16 @@
 - [ ] (Optional) **Node.js** (for later)
 - [ ] Enable DevTools: Right-click → Inspect → **Console tab**
   - Shortcut: `Ctrl + Shift + I` or `F12`
+
+---
+
+---
+
+## 🎯 What You’ll Learn Today:
+- Why JavaScript is essential in web development
+- How JS works inside a webpage
+- Difference between `console.log()` and `alert()`
+- How to interact with users using simple input/output
 
 ---
 
