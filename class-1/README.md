@@ -63,7 +63,7 @@
 
 
 ## 👨‍💻 Live Coding Demo  
-> 🧪 Playground: [js-team.tiiny.site](https://js-team.tiiny.site)
+>  Playground: [js-team.tiiny.site](https://js-team.tiiny.site)
 
 
 ### 🔹 1. Console Log:Output to console
