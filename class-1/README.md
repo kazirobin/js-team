@@ -15,7 +15,6 @@
 - On **browsers** (Client-side)
 - On **servers** with Node.js (we’ll learn later)
 
----
 
 ## 🧰 Getting Set Up (Super Easy!)
 
@@ -25,8 +24,6 @@
 - [ ] (Optional) **Node.js** (for later)
 - [ ] Enable DevTools: Right-click → Inspect → **Console tab**
   - Shortcut: `Ctrl + Shift + I` or `F12`
-
----
 
 ---
 
