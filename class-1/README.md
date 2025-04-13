@@ -143,3 +143,14 @@ console.log("User Age: " + age);
 
 Happy coding! 🚀
 
+```
+
+| Task | Code Example |
+|------|--------------|
+| Output to console | `console.log("Hello!");` |
+| Show popup message | `alert("Hi there!");` |
+| Ask user input | `prompt("Enter your name:");` |
+| Confirm action | `confirm("Are you sure?");` |
+
+---
+
