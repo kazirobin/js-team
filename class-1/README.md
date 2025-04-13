@@ -9,6 +9,8 @@
 - Works with **HTML & CSS**
 - It's **lightweight**, **fast**, and **interpreted**
 
+
+
 ### 🔸 Where Does It Run?
 - On **browsers** (Client-side)
 - On **servers** with Node.js (we’ll learn later)
@@ -33,6 +35,40 @@
 - How JS works inside a webpage
 - Difference between `console.log()` and `alert()`
 - How to interact with users using simple input/output
+
+---
+
+---
+
+## ❓ Questions & Answers
+
+### Q1: What is JavaScript used for?
+**A:** JavaScript is used to add behavior and interactivity to websites, like popups, forms, animations, and real-time updates.
+
+### Q2: What’s the difference between `console.log()` and `alert()`?
+**A:**
+- `console.log()` displays messages in the browser's console (for developers).
+- `alert()` shows a popup box to users.
+
+### Q3: What does `prompt()` do?
+**A:** It opens a dialog box where the user can type input. It returns the user’s input as a string.
+
+### Q4: What does `confirm()` do?
+**A:** It opens a dialog box with OK/Cancel and returns `true` if OK is pressed, `false` otherwise.
+
+### Q5: Can we write JS inside an HTML file?
+**A:** Yes. You can include JS code inside `<script>` tags directly within your HTML file.
+
+---
+
+```
+
+| Task | Code Example |
+|------|--------------|
+| Output to console | `console.log("Hello!");` |
+| Show popup message | `alert("Hi there!");` |
+| Ask user input | `prompt("Enter your name:");` |
+| Confirm action | `confirm("Are you sure?");` |
 
 ---
 
@@ -64,7 +100,19 @@ console.log("User decision:", confirmLeave);
 ```
 
 ---
+---
 
+## 🧠 Hands-On Coding 
+
+1. Open your browser and press `F12` to open the console.
+2. Try the following lines one by one:
+```js
+alert("Welcome to Day 1!");
+let userName = prompt("What's your name?");
+console.log("Hi", userName);
+let proceed = confirm("Shall we start learning JavaScript?");
+console.log("User said:", proceed);
+```
 ### 📋 **Hands-on Task **
 
 > 👨‍💻 Task: Create a simple script that:
@@ -88,4 +136,19 @@ console.log("User Age: " + age);
 - Not opening DevTools → Emphasize keyboard shortcut: `Ctrl + Shift + I`
 
 ---
+
+
+## 📝 Extra Tips
+- Always use `console.log()` to debug your code.
+- JS is case-sensitive: `let`, `Let`, and `LET` are different.
+- Start learning by writing small scripts and testing in the console.
+
+---
+
+## 🔗 Useful Resources
+- [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+- [JavaScript.info](https://javascript.info/)
+- [W3Schools JS Tutorial](https://www.w3schools.com/js/)
+
+Happy coding! 🚀
 
