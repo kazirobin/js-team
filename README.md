@@ -1,211 +1,127 @@
-# **Professional JavaScript Course Curriculum**  
-**Duration:** 4 Weeks (20 Days) | **Level:** Beginner to Intermediate  
+Here’s a **3-Month JavaScript Roadmap** (beginner to advanced) based on the full topic list from [javascript.info](https://javascript.info). Each day is structured for steady learning with theory and practice. You can adjust the speed if you want to go faster or slower.
 
 ---
 
-## **Week 1: JavaScript Fundamentals & Data Structures**  
+### 🔰 **Month 1: JavaScript Fundamentals + Objects + Functions**
 
-### **Day 1: Introduction & Basics**  
-- **Lecture:** What is JavaScript?  
-- **Setup:** Installing Node.js, VS Code, Browser DevTools  
-- **Hands-on:**  
-  - Writing first `console.log()`  
-  - Using `alert()`, `prompt()`, `confirm()`  
-- **Task:**  
-  - Create a simple script that asks for user input and displays it  
+#### **Week 1: Getting Started**
+- Day 1: [An Introduction to JavaScript](https://javascript.info/intro)
+- Day 2: [Manuals and specifications](https://javascript.info/manuals-specifications)  
+- Day 3: [Code editors](https://javascript.info/code-editors), [Developer console](https://javascript.info/devtools)
+- Day 4: [Hello, world!](https://javascript.info/hello-world)
+- Day 5: [Code structure](https://javascript.info/structure)
+- Day 6: ["use strict" mode](https://javascript.info/strict-mode)
+- Day 7: Weekly revision and 3 small practice exercises
 
-### **Day 2: Variables, Data Types & Operators**  
-- **Lecture:**  
-  - `let`, `const`, `var` differences  
-  - Primitive vs Reference Types  
-  - Type Conversion & Coercion  
-- **Hands-on:**  
-  - Converting strings to numbers (`parseInt`, `parseFloat`)  
-  - String concatenation vs template literals  
-- **Task:**  
-  - Build a temperature converter (Celsius ↔ Fahrenheit)  
+#### **Week 2: Variables, Data Types, and Operators**
+- Day 8: [Variables](https://javascript.info/variables)
+- Day 9: [Data types](https://javascript.info/types)
+- Day 10: [Interaction: alert, prompt, confirm](https://javascript.info/alert-prompt-confirm)
+- Day 11: [Type conversions](https://javascript.info/type-conversions)
+- Day 12: [Basic operators, maths](https://javascript.info/operators)
+- Day 13: [Comparisons](https://javascript.info/comparison)
+- Day 14: [Logical operators](https://javascript.info/logical-operators)
 
-### **Day 3: Strings & Numbers**  
-- **Lecture:**  
-  - String methods (`slice()`, `replace()`, `trim()`, `split()`)  
-  - Math methods (`Math.random()`, `Math.floor()`, `Math.max()`)  
-- **Hands-on:**  
-  - Palindrome checker  
-  - Random number generator  
-- **Task:**  
-  - Create a password generator  
+#### **Week 3: Control Flow + Functions**
+- Day 15: [Conditional branching: if, '?'](https://javascript.info/ifelse)
+- Day 16: [Nullish coalescing operator '??'](https://javascript.info/nullish-coalescing-operator)
+- Day 17: [Loops: while and for](https://javascript.info/while-for)
+- Day 18: [The "switch" statement](https://javascript.info/switch)
+- Day 19: [Functions](https://javascript.info/function-basics)
+- Day 20: [Function expressions](https://javascript.info/function-expressions)
+- Day 21: [Arrow functions, the basics](https://javascript.info/arrow-functions-basics)
 
-### **Day 4: Arrays & Objects**  
-- **Lecture:**  
-  - Array methods (`push()`, `pop()`, `shift()`, `unshift()`)  
-  - Object literals, destructuring, spread operator  
-- **Hands-on:**  
-  - Shopping cart simulation  
-  - Merging objects  
-- **Task:**  
-  - Build a simple to-do list (array-based)  
-
-### **Day 5: Functions & Scope**  
-- **Lecture:**  
-  - Function declarations vs expressions  
-  - Arrow functions  
-  - Closures & higher-order functions  
-- **Hands-on:**  
-  - Creating a counter with closures  
-  - Callback functions  
-- **Task:**  
-  - Implement a basic calculator  
+#### **Week 4: Code Quality + Objects**
+- Day 22: [Debugging in the browser](https://javascript.info/debugging-chrome)
+- Day 23: [Coding style](https://javascript.info/coding-style), [Comments](https://javascript.info/comments)
+- Day 24: [Objects](https://javascript.info/object)
+- Day 25: [Object references and copying](https://javascript.info/object-copy)
+- Day 26: [Garbage collection](https://javascript.info/garbage-collection)
+- Day 27: [Object methods, "this"](https://javascript.info/object-methods)
+- Day 28: [Constructor, operator "new"](https://javascript.info/constructor-new)
 
 ---
 
-## **Week 2: Control Flow, DOM & Events**  
+### 🚀 **Month 2: Deep Dive into Functions + Data Types + OOP**
 
-### **Day 6: Conditionals & Loops**  
-- **Lecture:**  
-  - `if-else`, `switch-case`  
-  - `for`, `while`, `do-while` loops  
-- **Hands-on:**  
-  - FizzBuzz challenge  
-  - Number guessing game  
-- **Task:**  
-  - Build a simple quiz app  
+#### **Week 5: Advanced Objects + Data Types**
+- Day 29: [Optional chaining '?.'](https://javascript.info/optional-chaining)
+- Day 30: [Symbol type](https://javascript.info/symbol)
+- Day 31: [Object to primitive conversion](https://javascript.info/object-toprimitive)
+- Day 32: [Numbers](https://javascript.info/number)
+- Day 33: [Strings](https://javascript.info/string)
+- Day 34: [Arrays](https://javascript.info/array)
+- Day 35: [Array methods](https://javascript.info/array-methods)
 
-### **Day 7: DOM Manipulation (Part 1)**  
-- **Lecture:**  
-  - `document.getElementById()`, `querySelector()`  
-  - `innerHTML` vs `textContent`  
-- **Hands-on:**  
-  - Changing text/styles dynamically  
-  - Creating elements with `createElement()`  
-- **Task:**  
-  - Build a dynamic list adder  
+#### **Week 6: Iterables + Date + JSON**
+- Day 36: [Iterables](https://javascript.info/iterable)
+- Day 37: [Map and Set](https://javascript.info/map-set)
+- Day 38: [WeakMap and WeakSet](https://javascript.info/weakmap-weakset)
+- Day 39: [Object.keys, values, entries](https://javascript.info/object-keys)
+- Day 40: [Destructuring assignment](https://javascript.info/destructuring-assignment)
+- Day 41: [Date and time](https://javascript.info/date)
+- Day 42: [JSON methods, toJSON](https://javascript.info/json)
 
-### **Day 8: DOM Manipulation (Part 2)**  
-- **Lecture:**  
-  - Event listeners (`click`, `mouseover`, `keydown`)  
-  - Event propagation (bubbling & capturing)  
-- **Hands-on:**  
-  - Toggle dark/light mode  
-  - Simple drag-and-drop  
-- **Task:**  
-  - Create a modal popup  
+#### **Week 7: Advanced Functions**
+- Day 43: [Recursion and stack](https://javascript.info/recursion)
+- Day 44: [Rest parameters and spread syntax](https://javascript.info/rest-parameters-spread)
+- Day 45: [Variable scope, closure](https://javascript.info/closure)
+- Day 46: [The old "var"](/var)
+- Day 47: [Global object](https://javascript.info/global-object)
+- Day 48: [Function object, NFE](https://javascript.info/named-function-expression)
+- Day 49: [The "new Function" syntax](https://javascript.info/new-function)
 
-### **Day 9: Forms & Validation**  
-- **Lecture:**  
-  - Form submission handling  
-  - Input validation (`required`, regex)  
-- **Hands-on:**  
-  - Login form validation  
-  - Dynamic form fields  
-- **Task:**  
-  - Build a signup form with validation  
-
-### **Day 10: Mini-Project**  
-- **Task:**  
-  - Build a **"Notes App"** with:  
-    - Add/Delete notes  
-    - Local storage persistence  
-    - Search functionality  
+#### **Week 8: Scheduling, Binding, OOP Start**
+- Day 50: [setTimeout/setInterval](https://javascript.info/settimeout-setinterval)
+- Day 51: [Decorators, call/apply](https://javascript.info/call-apply-decorators)
+- Day 52: [Function binding](https://javascript.info/bind)
+- Day 53: [Arrow functions revisited](https://javascript.info/arrow-functions)
+- Day 54: [Property descriptors](https://javascript.info/property-descriptors)
+- Day 55: [Getters and setters](https://javascript.info/property-accessors)
+- Day 56: [Prototypes](https://javascript.info/prototype-inheritance)
 
 ---
 
-## **Week 3: Asynchronous JS & APIs**  
+### 🧠 **Month 3: OOP, Async JS, Modules, DOM, Browser APIs**
 
-### **Day 11: Callbacks & Promises**  
-- **Lecture:**  
-  - Callback hell problem  
-  - Promises (`then`, `catch`, `finally`)  
-- **Hands-on:**  
-  - Fetching fake API data (JSONPlaceholder)  
-- **Task:**  
-  - Fetch and display user data  
+#### **Week 9: Classes + Errors**
+- Day 57: [Prototypal inheritance](https://javascript.info/prototype-inheritance)
+- Day 58: [F.prototype](https://javascript.info/function-prototype)
+- Day 59: [Native prototypes](https://javascript.info/native-prototypes)
+- Day 60: [Classes](https://javascript.info/class)
+- Day 61: [Class inheritance](https://javascript.info/class-inheritance)
+- Day 62: [Private/protected props](https://javascript.info/private-protected-properties-methods)
+- Day 63: [Mixins, instanceof](https://javascript.info/mixins)
 
-### **Day 12: Async/Await & Error Handling**  
-- **Lecture:**  
-  - `async/await` syntax  
-  - `try-catch` blocks  
-- **Hands-on:**  
-  - Handling API errors gracefully  
-- **Task:**  
-  - Build a weather app (using OpenWeather API)  
+#### **Week 10: Promises + Async**
+- Day 64: [Error handling, try...catch](https://javascript.info/try-catch)
+- Day 65: [Custom errors](https://javascript.info/custom-errors)
+- Day 66: [Callbacks and Promise intro](https://javascript.info/callbacks)
+- Day 67: [Promise](https://javascript.info/promise-basics)
+- Day 68: [Chaining promises](https://javascript.info/promise-chaining)
+- Day 69: [Error handling with promises](https://javascript.info/promise-error-handling)
+- Day 70: [Promise API](https://javascript.info/promise-api)
 
-### **Day 13: Fetch API & AJAX**  
-- **Lecture:**  
-  - `fetch()` vs `XMLHttpRequest`  
-  - REST API concepts (GET, POST, PUT, DELETE)  
-- **Hands-on:**  
-  - CRUD operations with a mock API  
-- **Task:**  
-  - Create a blog post fetcher  
+#### **Week 11: Async/Await + Generators + Modules**
+- Day 71: [Promisification](https://javascript.info/promisify)
+- Day 72: [Microtasks](https://javascript.info/microtask-queue)
+- Day 73: [Async/await](https://javascript.info/async-await)
+- Day 74: [Generators](https://javascript.info/generators)
+- Day 75: [Async iteration](https://javascript.info/async-iterators-generators)
+- Day 76: [Modules intro](https://javascript.info/modules-intro)
+- Day 77: [Export & import](https://javascript.info/import-export), [Dynamic imports](https://javascript.info/modules-dynamic-imports)
 
-### **Day 14: Local Storage & State**  
-- **Lecture:**  
-  - `localStorage` vs `sessionStorage`  
-  - JSON (`stringify`, `parse`)  
-- **Hands-on:**  
-  - Persisting to-do list data  
-- **Task:**  
-  - Enhance notes app with edit functionality  
-
-### **Day 15: Mini-Project**  
-- **Task:**  
-  - Build a **"Movie Search App"** using:  
-    - Fetch API (OMDb API)  
-    - Dynamic DOM rendering  
-    - Local storage for favorites  
+#### **Week 12: Browser, Events, DOM, Storage**
+- Day 78: [DOM basics](https://javascript.info/dom-nodes)
+- Day 79: [DOM traversal](https://javascript.info/dom-navigation), [getElement/querySelector](https://javascript.info/searching-elements-dom)
+- Day 80: [Attributes & classes](https://javascript.info/dom-attributes), [Styles](https://javascript.info/styles-and-classes)
+- Day 81: [Events](https://javascript.info/introduction-browser-events), [Bubbling](https://javascript.info/bubbling-and-capturing)
+- Day 82: [Form Events](https://javascript.info/form-elements)
+- Day 83: [Page loading](https://javascript.info/onload-ondomcontentloaded)
+- Day 84: [Storage: localStorage, cookies](https://javascript.info/localstorage)
 
 ---
 
-## **Week 4: Advanced Concepts & Deployment**  
+If you'd like this as a **PDF or Notion page**, or even a **daily checklist app-style format**, let me know. I can organize it that way too.
 
-### **Day 16: ES6+ Features**  
-- **Lecture:**  
-  - Modules (`import/export`)  
-  - Classes & inheritance  
-- **Hands-on:**  
-  - Building a class-based UI component  
-- **Task:**  
-  - Refactor a project using modules  
-
-### **Day 17: Debugging & Performance**  
-- **Lecture:**  
-  - Chrome DevTools debugging  
-  - Memory leaks & optimization  
-- **Hands-on:**  
-  - Fixing broken code snippets  
-- **Task:**  
-  - Optimize a slow script  
-
-### **Day 18: Git & GitHub**  
-- **Lecture:**  
-  - Basic Git commands (`init`, `commit`, `push`)  
-  - Branching & merging  
-- **Hands-on:**  
-  - Hosting a project on GitHub  
-- **Task:**  
-  - Push notes app to GitHub  
-
-### **Day 19: Deployment (Netlify/Vercel)**  
-- **Lecture:**  
-  - Static site deployment  
-  - CI/CD basics  
-- **Hands-on:**  
-  - Deploying a project live  
-- **Task:**  
-  - Deploy movie search app  
-
-### **Day 20: Final Project**  
-- **Task:**  
-  - Build a **"Task Manager"** with:  
-    - Drag-and-drop tasks  
-    - API persistence (Firebase/JSON server)  
-    - User authentication (bonus)  
-
----
-
-### **Additional Resources**  
-✔ **Daily Coding Challenges** (LeetCode, Codewars)  
-✔ **Weekly Code Reviews** (Instructor feedback)  
-✔ **GitHub Portfolio Setup** (Showcase projects)  
-
-This structured approach ensures a **hands-on, project-based** learning experience while covering all key JavaScript concepts professionally. 🚀
+Do you want assignments or small projects to go with each week?
