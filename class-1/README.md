@@ -84,7 +84,6 @@ console.log("User Age: " + age);
 ---
 
 ### ❗ **Common Mistakes to Watch For :**
-- Students often forget `let` or `const`
 - Typing `console.log` wrong
 - Not opening DevTools → Emphasize keyboard shortcut: `Ctrl + Shift + I`
 
