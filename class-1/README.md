@@ -46,8 +46,7 @@
 **A:** JavaScript is used to add behavior and interactivity to websites, like popups, forms, animations, and real-time updates.
 
 ### Q2: What’s the difference between `console.log()` and `alert()`?
-**A:**
-- `console.log()` displays messages in the browser's console (for developers).
+**A:**- `console.log()` displays messages in the browser's console (for developers).
 - `alert()` shows a popup box to users.
 
 ### Q3: What does `prompt()` do?
