@@ -1,6 +1,4 @@
-Here's the complete content converted to Markdown format:
-
-```markdown
+Here's the complete content converted to Markdown forma
 # 🔥 15-Day JavaScript Mastery Challenge - Day 1: JavaScript Basics
 
 Welcome to Day 1 of your JavaScript mastery journey! Today we'll cover the fundamental building blocks of JavaScript that every developer needs to know.
@@ -71,7 +69,7 @@ if (message) {
 This is a 
 multi-line comment
 */
-```
+
 
 ## Strict Mode
 
