@@ -1,0 +1,12 @@
+-- why javascript is not multi trade.
+-- how to execute js code
+-- How js code works
+-- memory leaking problem
+-- lasting in first out LIFO
+-- function declaration
+-- function invocation
+-- scope chaining own memory || parent memory
+-- lexical environment
+-- scope, scope chain, lexical environment, hoisting
+-- how to parameter store in js memory
+-- temporal dead zone
