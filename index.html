@@ -4,11 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .main{
+      display: flex; flex-direction: column; gap: 10px;
+      max-width: fit-content;
+      padding: 10px;
+      h1{
+        padding-inline-start: 10px;
+      }
+    }
+    .sub-main:nth-child( n + 1 ){
+      background-color:peru;
+
+    }
+    .sub-main:nth-child( 2n + 3){
+      background-color: bisque;
+    }
+    .sub-main:nth-child( 3n + 4){
+      background-color: cadetblue;
+    }
+    .sub-main ul li {
+      padding-block: 10px;
+      padding-inline-start: 2px;
+    }
+    .sub-main h5{
+    
+      padding-inline: 40px;
+      padding-block: 10px;
+      font-size: larger;
+      color: purple;
+      background-color: aquamarine;
+    }
+  </style>
 </head>
 <body>
-  <div>
+  <div class="main">
     <h1>this is main page</h1>
-    <div>
+    <div class="sub-main">
       <h5>Module 1</h5>
       <ul>
         <li><a href="./Codes/01 Module 1 React Fundamentals/001-The-Magic-of-React.html">class-1</a></li>
@@ -44,9 +76,170 @@
         <li><a href="./Codes/01 Module 1 React Fundamentals/031 - Styling In React •  ( 00_10 ).html">class-31</a></li>
         <li><a href="./Codes/01 Module 1 React Fundamentals/032 - CSS Modules •  ( 00_28 ).html">class-32</a></li>
         <li><a href="./Codes/01 Module 1 React Fundamentals/033 - Exercises •  ( 00_54 ).html">class-33</a></li>
+        <li><a href="./Codes/01 Module 1 React Fundamentals/OPTIONAL About React 19 • Josh W Comeau's Course Platform.html">optional</a></li>
+      </ul>
+    </div>
+    <div class="sub-main">
+      <h5>Module 2</h5>
+      <ul>
+       <li><a href="./Codes/02 Module 2 Working With State/001 -  ( 09_15 ).html">class-1</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/002 - Event Handlers •  ( 09_32 ).html">class-2</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/003 - Specifying Arguments •  ( 09_45 ).html">class-3</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/004 - Exercises •  ( 07 ).html">class-4</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/005 - The useState Hook •  ( 24 ).html">class-5</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/006 - Core React Loop •  ( 38 ).html">class-6</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/007 - Rendering Vs. Painting •  ( 56 ).html">class-7</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/008 - Asynchronous Updates •  ( 11_13 ).html">class-8</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/009 - Exercises •  ( 11_33 ).html">class-9</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/010 - Why the Dance_ •  ( 11_50 ).html">class-10</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/011 - Forms •  ( 12_00 ).html">class-11</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/012 - Data Binding •  ( 12_20 ).html">class-12</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/013 - The onClick Parable •  ( 12_37 ).html">class-13</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/014 - Other Form Controls •  ( 12_51 ).html">class-14</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/015 - Exercises •  ( 13_22 ).html">class-15</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/016 - Props Vs. State •  ( 13_36 ).html">class-16</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/017 - Complex state •  ( 13_55 ).html">class-17</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/018 - Mutation Bugs •  ( 14_15 ).html">class-18</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/019 - Exercises •  ( 14_33 ).html">class-19</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/020 - Dynamic Key Generation •  ( 14_47 ).html">class-20</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/021 - Key Gotchas •  ( 15_06 ).html">class-21</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/022 - Exercises •  ( 21_04 ).html">class-22</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/023 - Component Instances •  ( 21_22 ).html">class-23</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/024 - State Management Tools •  ( 21_44 ).html">class-24</a></li>
+       <li><a href="./Codes/02 Module 2 Working With State/025 - Bonus_ Input Cheatsheet •  ( 22_21 ).html">class-25</a></li>
 
       </ul>
     </div>
+    <div class="sub-main">
+      <h5>Module 3</h5>
+      <ul>
+      <li><a href="./Codes/03 Project Word Game/001 - About This Project •  ( 23_28 ).html">class-1</a></li>
+      <li><a href="./Codes/03 Project Word Game/002 - Strategies and Mindset •  ( 23_37 ).html">class-2</a></li>
+      <li><a href="./Codes/03 Project Word Game/003 - Local Develoent •  ( 23_53 ).html">class-3</a></li>
+      <li><a href="./Codes/03 Project Word Game/004 - Getting Started •  ( 24_04 ).html">class-4</a></li>
+      <li><a href="./Codes/03 Project Word Game/005 - Solution •  ( 24_32 ).html">class-5</a></li>
+      </ul>
+    </div>
+    <div class="sub-main">
+      <h5>Module 4</h5>
+      <ul>
+      <li><a href="./Codes/04 Module 3 React Hooks/001 -  ( 25_52 ).html">class-1</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/002 - The useId Hook •  ( 26_09 ).html">class-2</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/003 - Rules of Hooks •  ( 26_24 ).html">class-3</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/004 - Exercises •  ( 26_42 ).html">class-4</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/005 - Immutability Revisited •  ( 26_55 ).html">class-5</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/006 - Refs •  ( 27_10 ).html">class-6</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/007 - Exercises •  ( 27_28 ).html">class-7</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/008 - Side Effects •  ( 27_39 ).html">class-8</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/009 - The useEffect hook •  ( 27_52 ).html">class-9</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/010 - Exercises •  ( 28_18 ).html">class-10</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/011 - Effect Lint Rules •  ( 28_33 ).html">class-11</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/012 - Running on Mount •  ( 28_56 ).html">class-12</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/013 - Exercises •  ( 29_19 ).html">class-13</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/014 - Cleanup •  ( 29_39 ).html">class-14</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/015 - Cleanup Exercises •  ( 30_12 ).html">class-15</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/016 - Stale Values •  ( 30_44 ).html">class-16</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/017 - Exercises •  ( 30_59 ).html">class-17</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/018 - Strict Mode •  ( 31_20 ).html">class-18</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/019 - Custom Hooks •  ( 31_34 ).html">class-19</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/020 - Exercises •  ( 32_02 ).html">class-20</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/021 - Data Fetching •  ( 32_12 ).html">class-21</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/022 - Fetching on Event •  ( 32_27 ).html">class-22</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/023 - Fetching on Mount •  ( 32_46 ).html">class-23</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/024 - Exercises •  ( 33_11 ).html">class-24</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/025 - Async Effect Gotcha •  ( 33_28 ).html">class-25</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/026 - Memoization •  ( 33_40 ).html">class-26</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/027 - Why React Re-Renders •  ( 33_57 ).html">class-27</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/028 - Pure Components •  ( 34_08 ).html">class-28</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/029 - The useMemo Hook •  ( 34_29 ).html">class-29</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/030 - The useCallback Hook •  ( 34_42 ).html">class-30</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/031 - Exercises •  ( 35_09 ).html">class-31</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/032 - Alternatives •  ( 35_29 ).html">class-32</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/033 - Future of Memoization •  ( 35_38 ).html">class-33</a></li>
+      <li><a href="./Codes/04 Module 3 React Hooks/033 - Future of Memoization •  ( 35_38 ).html">class-34</a></li>
+      </ul>
+    </div>
+    <div class="sub-main">
+      <h5>Module 5</h5>
+      <ul>
+        <li><a href="./Codes/05 Module 4 Component API Design/001 - Introduction •  ( 36_59 ).html">class-1</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/002 - The Spectrum of Components •  ( 37_16 ).html">class-2</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/003 - Exercises •  ( 37_42 ).html">class-3</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/004 - Component Libraries •  ( 37_57 ).html">class-4</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/005 - Prop Delegation •  ( 38_23 ).html">class-5</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/006 - Exercises •  ( 38_39 ).html">class-6</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/007 - Conflicts •  ( 38_58 ).html">class-7</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/008 - Delegating Styles •  ( 39_14 ).html">class-8</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/009 - Forwarding Refs •  ( 39_32 ).html">class-9</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/010 - Exercises •  ( 39_49 ).html">class-10</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/011 - Polymorphism •  ( 40_12 ).html">class-11</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/012 - Exercises •  ( 40_37 ).html">class-12</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/013 - Compound Components •  ( 40_57 ).html">class-13</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/014 - Slots •  ( 41_15 ).html">class-14</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/015 - Exercises •  ( 41_42 ).html">class-15</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/016 - Context •  ( 41_50 ).html">class-16</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/017 - The Problem •  ( 42_05 ).html">class-17</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/018 - Syntax •  ( 42_18 ).html">class-18</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/019 - Exercises •  ( 42_37 ).html">class-19</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/020 - Provider Components •  ( 42_57 ).html">class-20</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/021 - Performance •  ( 43_24 ).html">class-21</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/022 - Modals •  ( 43_40 ).html">class-22</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/023 - Exercises •  ( 43_55 ).html">class-23</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/024 - Unstyled Component Libraries •  ( 44_09 ).html">class-24</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/025 - Converting Our Modal •  ( 44_24 ).html">class-25</a></li>
+        <li><a href="./Codes/05 Module 4 Component API Design/026 - Exercises •  ( 44_57 ).html">class-26</a></li>
+       
+      </ul>
+    </div>
+    <div class="sub-main">
+      <h5>Module 6</h5>
+      <ul>
+      
+      </ul>
+    </div>
+    <div class="sub-main">
+      <h5>Module 7</h5>
+      <ul>
+      
+      </ul>
+    </div>
+    <div class="sub-main">
+      <h5>Module 8</h5>
+      <ul>
+      
+      </ul>
+    </div>
+    <div class="sub-main">
+      <h5>Module 9</h5>
+      <ul>
+      
+      </ul>
+    </div>
+    <div class="sub-main">
+      <h5>Module 10</h5>
+      <ul>
+      
+      </ul>
+    </div>
+    <div class="sub-main">
+      <h5>Module 11</h5>
+      <ul>
+      
+      </ul>
+    </div>
+    <div class="sub-main">
+      <h5>Module 12</h5>
+      <ul>
+      
+      </ul>
+    </div>
+    <div class="sub-main">
+      <h5>Module bonus</h5>
+      <ul>
+      
+      </ul>
+    </div>
+
   </div>
 </body>
 </html>
