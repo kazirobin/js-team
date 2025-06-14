@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React with CDN</title>
+    <script src="./react/react.js"></script>
+    <script src="./react-dom/react-dom.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script>
+        // Create a React element
+        const element = React.createElement(
+            'p',
+            { id: 'hello' },
+            'Hello World!'
+        );
+
+        // Render the application
+        const container = document.querySelector('#root');
+        const root = ReactDOM.createRoot(container);
+        root.render(element);
+    </script>
+</body>
+</html>
