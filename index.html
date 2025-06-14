@@ -9,9 +9,9 @@
       display: flex; flex-direction: column; gap: 10px;
       max-width: fit-content;
       padding: 10px;
-      h1{
-        padding-inline-start: 10px;
-      }
+    }
+    li{
+      padding-inline: 10px;
     }
     .sub-main:nth-child( n + 1 ){
       background-color:peru;
@@ -35,6 +35,18 @@
       color: purple;
       background-color: aquamarine;
     }
+    a{
+      font-weight: 700;
+      text-transform: capitalize;
+      text-decoration: none;
+      border: 1px solid blue;
+      padding: 5px 20px;
+      background-color: azure;
+      &:visited{
+        color: red;
+        border: 1px solid red;
+      }
+    }
   </style>
 </head>
 <body>
@@ -42,73 +54,161 @@
     <h1>this is main page</h1>
     <div class="sub-main">
       <h5>Module 1</h5>
-      <ul>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/001-The-Magic-of-React.html">class-1</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/">class-2</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/003-Build-Your-Own-React.html">class-3</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/004-Understanding-JSX.html">class-4</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/005-Expression-Slots.html">class-5</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/006-Differences-from-HTML.html">class-6</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/007-Fix-The-Converter.html">class-7</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/008 - The Whitespace Gotcha •  ( 52_40 ).html">class-8</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/009 - Exercises •  ( 52_58 ).html">class-9</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/010 - JSX vs.html">class-10</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/011-Components.html">class-11</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/012 - Thinking in Components •  ( 53_27 ).html">class-12</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/013 - Basic Syntax •  ( 53_47 ).html">class-13</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/014 - Props •  ( 54_03 ).html">class-14</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/015 - The Children Prop •  ( 54_19 ).html">class-15</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/016 - Exercises •  ( 54_47 ).html">class-16</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/017 - Application Structure •  ( 55_05 ).html">class-17</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/018 - Fragments •  ( 55_31 ).html">class-18</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/019 - Iteration •  ( 55_39 ).html">class-19</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/020 - Mapping Over Data •  ( 55_59 ).html">class-20</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/021 - Keys •  ( 56_27 ).html">class-21</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/022 - Exercises •  ( 56_46 ).html">class-22</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/023 - Conditional Rendering •  ( 56_54 ).html">class-23</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/024 - With an If Statement •  ( 57_09 ).html">class-24</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/025 - With && •  ( 57_42 ).html">class-25</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/026 - With Ternary •  ( 57_55 ).html">class-26</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/027 - Showing and Hiding •  ( 58_06 ).html">class-27</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/028 - Exercises •  ( 58_34 ).html">class-28</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/029 - Range Utility •  ( 533 ).html">class-29</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/030 - Exercises •  ( 557 ).html">class-30</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/031 - Styling In React •  ( 00_10 ).html">class-31</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/032 - CSS Modules •  ( 00_28 ).html">class-32</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/033 - Exercises •  ( 00_54 ).html">class-33</a></li>
-        <li><a href="./Codes/01 Module 1 React Fundamentals/OPTIONAL About React 19 • Josh W Comeau's Course Platform.html">optional</a></li>
-      </ul>
+      <div class="" style="display: flex;">
+        <!-- module link  -->
+        <ul>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/001-The-Magic-of-React.html">class-1</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/002-Hello-React.html">class-2</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/003-Build-Your-Own-React.html">class-3</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/004-Understanding-JSX.html">class-4</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/005-Expression-Slots.html">class-5</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/006-Differences-from-HTML.html">class-6</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/007-Fix-The-Converter.html">class-7</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/008 - The Whitespace Gotcha •  ( 52_40 ).html">class-8</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/009 - Exercises •  ( 52_58 ).html">class-9</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/010 - JSX vs.html">class-10</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/011-Components.html">class-11</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/012 - Thinking in Components •  ( 53_27 ).html">class-12</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/013 - Basic Syntax •  ( 53_47 ).html">class-13</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/014 - Props •  ( 54_03 ).html">class-14</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/015 - The Children Prop •  ( 54_19 ).html">class-15</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/016 - Exercises •  ( 54_47 ).html">class-16</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/017 - Application Structure •  ( 55_05 ).html">class-17</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/018 - Fragments •  ( 55_31 ).html">class-18</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/019 - Iteration •  ( 55_39 ).html">class-19</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/020 - Mapping Over Data •  ( 55_59 ).html">class-20</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/021 - Keys •  ( 56_27 ).html">class-21</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/022 - Exercises •  ( 56_46 ).html">class-22</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/023 - Conditional Rendering •  ( 56_54 ).html">class-23</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/024 - With an If Statement •  ( 57_09 ).html">class-24</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/025 - With && •  ( 57_42 ).html">class-25</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/026 - With Ternary •  ( 57_55 ).html">class-26</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/027 - Showing and Hiding •  ( 58_06 ).html">class-27</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/028 - Exercises •  ( 58_34 ).html">class-28</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/029 - Range Utility •  ( 533 ).html">class-29</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/030 - Exercises •  ( 557 ).html">class-30</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/031 - Styling In React •  ( 00_10 ).html">class-31</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/032 - CSS Modules •  ( 00_28 ).html">class-32</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/033 - Exercises •  ( 00_54 ).html">class-33</a></li>
+          <li><a href="./Codes/01 Module 1 React Fundamentals/OPTIONAL About React 19 • Josh W Comeau's Course Platform.html">optional</a></li>
+        </ul>
+        <!-- code link  -->
+        <ul>
+          <li><a href="https://codesandbox.io/s/rlqu5y?file=/index.js&utm_medium=sandpack">1. Link</a></li>
+<li><a href="https://codesandbox.io/s/nc181t?file=%2Findex.js&utm_medium=sandpack">2. Link</a></li>
+<li><a href="https://codesandbox.io/s/r18v3h?file=%2Findex.js&utm_medium=sandpack">3. Link</a></li>
+<li><a href="https://codesandbox.io/s/sdk2dn?file=%2Findex.js&utm_medium=sandpack">4. Link</a></li>
+<li><a href="https://codesandbox.io/s/trix1f?file=%2Findex.js&utm_medium=sandpack">5. Link</a></li>
+<li><a href="https://codesandbox.io/s/jeng2z?file=%2Findex.js&utm_medium=sandpack">6. Link</a></li>
+<li><a href="https://codesandbox.io/s/nc7lyw?file=/index.js&utm_medium=sandpack">7. Link</a></li>
+<li><a href="https://codesandbox.io/s/8phnv7?file=%2Findex.js&utm_medium=sandpack">8. Link</a></li>
+<li><a href="https://codesandbox.io/s/tqznum?file=%2Findex.js&utm_medium=sandpack">9. Link</a></li>
+<li><a href="https://codesandbox.io/s/p04rme?file=%2Findex.js&utm_medium=sandpack">10. Link</a></li>
+<li><a href="https://codesandbox.io/s/16vlj9?file=/index.js&utm_medium=sandpack">11. Link</a></li>
+<li><a href="https://codesandbox.io/s/874yqq?file=/index.js&utm_medium=sandpack">12. Link</a></li>
+<li><a href="https://codesandbox.io/s/53qn6f?file=/App.js&utm_medium=sandpack">13. Link</a></li>
+<li><a href="https://codesandbox.io/s/kyvt92?file=/index.js&utm_medium=sandpack">14. Link</a></li>
+<li><a href="https://codesandbox.io/s/162m4v?file=/index.js&utm_medium=sandpack">15. Link</a></li>
+<li><a href="https://codesandbox.io/s/to2igc?file=/App.js&utm_medium=sandpack">16. Link</a></li>
+<li><a href="https://codesandbox.io/s/kqv3y9?file=/App.js&utm_medium=sandpack">17. Link</a></li>
+<li><a href="https://codesandbox.io/s/ebobtr?file=%2FApp.js&utm_medium=sandpack">18. Link</a></li>
+<li><a href="https://codesandbox.io/s/xwdnlx?file=/App.js&utm_medium=sandpack">19. Link</a></li>
+<li><a href="https://codesandbox.io/s/1y7rzu?file=%2FApp.js&utm_medium=sandpack">20. Link</a></li>
+<li><a href="https://codesandbox.io/s/shp1j4?file=/App.js&utm_medium=sandpack">21. Link</a></li>
+<li><a href="https://codesandbox.io/s/nlcmvn?file=%2FApp.js&utm_medium=sandpack">22. Link</a></li>
+<li><a href="https://codesandbox.io/s/yevehc?file=%2FApp.js&utm_medium=sandpack">23. Link</a></li>
+<li><a href="https://codesandbox.io/s/oq8nuj?file=%2FFriend.js&utm_medium=sandpack">24. Link</a></li>
+<li><a href="https://codesandbox.io/s/3tkmru?file=%2FApp.js&utm_medium=sandpack">25. Link</a></li>
+<li><a href="https://codesandbox.io/s/wfx0u7?file=%2FApp.js&utm_medium=sandpack">26. Link</a></li>
+<li><a href="https://codesandbox.io/s/7vxwev?file=%2FApp.js&utm_medium=sandpack">27. Link</a></li>
+<li><a href="https://codesandbox.io/s/xhiscp?file=%2FApp.js&utm_medium=sandpack">28. Link</a></li>
+<li><a href="https://codesandbox.io/s/2x5c26?file=%2FProfileCard.js&utm_medium=sandpack">29. Link</a></li>
+<li><a href="https://codesandbox.io/s/9rfxk6?file=%2FStarRating.js&utm_medium=sandpack">30. Link</a></li>
+<li><a href="https://codesandbox.io/s/2jsvop?file=%2FStarRating.js&utm_medium=sandpack">31. Link</a></li>
+<li><a href="https://codesandbox.io/s/tzctgy?file=%2FGraph.js&utm_medium=sandpack">32. Link</a></li>
+<li><a href="https://codesandbox.io/s/9jfp5p?file=%2FGrid.js&utm_medium=sandpack">33. Link</a></li>
+<li><a href="https://codesandbox.io/s/s695oy?file=/components/Sidenote.js&utm_medium=sandpack">34. Link</a></li>
+<li><a href="https://codesandbox.io/s/4lfxl9?file=/Sidenote.js&utm_medium=">35. Link</a></li>
+<li><a href="https://codesandbox.io/s/52lgj8?file=/Movie.js&utm_medium=sandpack">36. Link</a></li>
+        </ul>
+      </div>
     </div>
     <div class="sub-main">
       <h5>Module 2</h5>
-      <ul>
-       <li><a href="./Codes/02 Module 2 Working With State/001 -  ( 09_15 ).html">class-1</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/002 - Event Handlers •  ( 09_32 ).html">class-2</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/003 - Specifying Arguments •  ( 09_45 ).html">class-3</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/004 - Exercises •  ( 07 ).html">class-4</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/005 - The useState Hook •  ( 24 ).html">class-5</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/006 - Core React Loop •  ( 38 ).html">class-6</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/007 - Rendering Vs. Painting •  ( 56 ).html">class-7</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/008 - Asynchronous Updates •  ( 11_13 ).html">class-8</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/009 - Exercises •  ( 11_33 ).html">class-9</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/010 - Why the Dance_ •  ( 11_50 ).html">class-10</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/011 - Forms •  ( 12_00 ).html">class-11</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/012 - Data Binding •  ( 12_20 ).html">class-12</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/013 - The onClick Parable •  ( 12_37 ).html">class-13</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/014 - Other Form Controls •  ( 12_51 ).html">class-14</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/015 - Exercises •  ( 13_22 ).html">class-15</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/016 - Props Vs. State •  ( 13_36 ).html">class-16</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/017 - Complex state •  ( 13_55 ).html">class-17</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/018 - Mutation Bugs •  ( 14_15 ).html">class-18</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/019 - Exercises •  ( 14_33 ).html">class-19</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/020 - Dynamic Key Generation •  ( 14_47 ).html">class-20</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/021 - Key Gotchas •  ( 15_06 ).html">class-21</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/022 - Exercises •  ( 21_04 ).html">class-22</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/023 - Component Instances •  ( 21_22 ).html">class-23</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/024 - State Management Tools •  ( 21_44 ).html">class-24</a></li>
-       <li><a href="./Codes/02 Module 2 Working With State/025 - Bonus_ Input Cheatsheet •  ( 22_21 ).html">class-25</a></li>
+            <div class="" style="display: flex;">
+              <!-- module link  -->
+              <ul>
+               <li><a href="./Codes/02 Module 2 Working With State/001 -  ( 09_15 ).html">class-1</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/002 - Event Handlers •  ( 09_32 ).html">class-2</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/003 - Specifying Arguments •  ( 09_45 ).html">class-3</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/004 - Exercises •  ( 07 ).html">class-4</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/005 - The useState Hook •  ( 24 ).html">class-5</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/006 - Core React Loop •  ( 38 ).html">class-6</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/007 - Rendering Vs. Painting •  ( 56 ).html">class-7</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/008 - Asynchronous Updates •  ( 11_13 ).html">class-8</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/009 - Exercises •  ( 11_33 ).html">class-9</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/010 - Why the Dance_ •  ( 11_50 ).html">class-10</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/011 - Forms •  ( 12_00 ).html">class-11</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/012 - Data Binding •  ( 12_20 ).html">class-12</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/013 - The onClick Parable •  ( 12_37 ).html">class-13</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/014 - Other Form Controls •  ( 12_51 ).html">class-14</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/015 - Exercises •  ( 13_22 ).html">class-15</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/016 - Props Vs. State •  ( 13_36 ).html">class-16</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/017 - Complex state •  ( 13_55 ).html">class-17</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/018 - Mutation Bugs •  ( 14_15 ).html">class-18</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/019 - Exercises •  ( 14_33 ).html">class-19</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/020 - Dynamic Key Generation •  ( 14_47 ).html">class-20</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/021 - Key Gotchas •  ( 15_06 ).html">class-21</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/022 - Exercises •  ( 21_04 ).html">class-22</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/023 - Component Instances •  ( 21_22 ).html">class-23</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/024 - State Management Tools •  ( 21_44 ).html">class-24</a></li>
+               <li><a href="./Codes/02 Module 2 Working With State/025 - Bonus_ Input Cheatsheet •  ( 22_21 ).html">class-25</a></li>
+        
+              </ul>
+              <!-- code link  -->
+              <ul>
+<li><a href="https://codesandbox.io/s/0qhl5e?file=/App.js&utm_medium=sandpack">01. Link</a></li>
+<li><a href="https://codesandbox.io/s/vnszxb?file=/App.js&utm_medium=sandpack">02. Link</a></li>
+<li><a href="https://codesandbox.io/s/di40f1?file=/App.js&utm_medium=sandpack">03. Link</a></li>
+<li><a href="https://codesandbox.io/s/4z5wsy?file=/App.js&utm_medium=sandpack">04. Link</a></li>
+<li><a href="https://codesandbox.io/s/zh2vqo?file=/Character.js&utm_medium=sandpack">05. Link</a></li>
+<li><a href="https://codesandbox.io/s/vix62b?file=/Counter.js&utm_medium=sandpack">06. Link</a></li>
+<li><a href="https://codesandbox.io/s/75jsi3?file=/App.js&utm_medium=sandpack">07. Link</a></li>
+<li><a href="https://codesandbox.io/s/bf1m5f?file=/App.js&utm_medium=sandpack">08. Link</a></li>
+<li><a href="https://codesandbox.io/s/owj1so?file=/App.js&utm_medium=sandpack">09. Link</a></li>
+<li><a href="https://codesandbox.io/s/fuhfj2?file=/SearchForm.js&utm_medium=sandpack">10. Link</a></li>
+<li><a href="https://codesandbox.io/s/d5mc8i?file=/SearchForm.js&utm_medium=sandpack">11. Link</a></li>
+<li><a href="https://codesandbox.io/s/wyefg9?file=/App.js&utm_medium=sandpack">12. Link</a></li>
+<li><a href="https://codesandbox.io/s/rubsnl?file=/App.js&utm_medium=sandpack">13. Link</a></li>
+<li><a href="https://codesandbox.io/s/l44q8p?file=/App.js&utm_medium=sandpac">14. Link</a></li>
+<li><a href="https://codesandbox.io/s/xin7u8?file=%2FApp.js&utm_medium=sandpack">15. Link</a></li>
+<li><a href="https://codesandbox.io/s/xp5bjn?file=%2FApp.js&utm_medium=sandpack">16. Link</a></li>
+<li><a href="https://codesandbox.io/s/ldo0vl?file=%2FApp.js&utm_medium=sandpack">17. Link</a></li>
+<li><a href="https://codesandbox.io/s/qqv7hi?file=/App.js&utm_medium=sandpack">18. Link</a></li>
+<li><a href="https://codesandbox.io/s/nhvhjy?file=/App.js&utm_medium=sandpack">19. Link</a></li>
+<li><a href="https://codesandbox.io/s/f546fg?file=%2FApp.js&utm_medium=sandpack">20. Link</a></li>
+<li><a href="https://codesandbox.io/s/cmczc9?file=%2FStickerPad.js&utm_medium=sandpack">21. Link</a></li>
+<li><a href="https://codesandbox.io/s/6l4hqm?file=/StickerPad.js&utm_medium=sandpack">22. Link</a></li>
+<li><a href="https://codesandbox.io/s/4v6wgd?file=/App.js&utm_medium=sandpack">23. Link</a></li>
+<li><a href="https://codesandbox.io/s/6sg7nq?file=%2FApp.js&utm_medium=sandpack">24. Link</a></li>
+<li><a href="https://codesandbox.io/s/i3dzb4?file=%2FApp.js&utm_medium=sandpack">25. Link</a></li>
+<li><a href="https://codesandbox.io/s/fiupgu?file=%2FApp.js&utm_medium=sandpack">26. Link</a></li>
+<li><a href="https://codesandbox.io/s/mfc5dg?file=%2FApp.js&utm_medium=sandpack">27. Link</a></li>
+<li><a href="https://codesandbox.io/s/690qlw?file=/index.js&utm_medium=sandpack">28. Link</a></li>
+<li><a href="https://codesandbox.io/s/tc79tp?file=%2FApp.js&utm_medium=sandpack">29. Link</a></li>
+<li><a href="https://codesandbox.io/s/73xn6x?file=%2FApp.js&utm_medium=sandpack">30. Link</a></li>
+<li><a href="https://codesandbox.io/s/my2wgn?file=%2FApp.js&utm_medium=sandpack">31. Link</a></li>
+<li><a href="https://codesandbox.io/s/4sjnxc?file=%2FApp.js&utm_medium=sandpack">32. Link</a></li>
+<li><a href="https://codesandbox.io/s/6c3fcj?file=%2FApp.js&utm_medium=sandpack">33. Link</a></li>
+<li><a href="https://codesandbox.io/s/nrg3gr?file=%2FApp.js&utm_medium=sandpack">34. Link</a></li>
+<li><a href="https://codesandbox.io/s/l3vsyx?file=%2FApp.js&utm_medium=sandpack">35. Link</a></li>
+<li><a href="https://codesandbox.io/s/8lw462?file=/App.js&utm_medium=sandpack">36. Link</a></li>
+<li><a href="https://codesandbox.io/s/l4mp2j?file=%2FApp.js&utm_medium=sandpack">37. Link</a></li>
+<li><a href="https://codesandbox.io/s/ym9pjh?file=%2FApp.js&utm_medium=sandpack">38. Link</a></li>
+<li><a href="https://codesandbox.io/s/wrfg5y?file=/App.js&utm_medium=sandpack">39. Link</a></li>
+              </ul>
+            </div>
 
-      </ul>
     </div>
     <div class="sub-main">
       <h5>Module 3</h5>
