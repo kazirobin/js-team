@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Counter Class</title>
+
+    <!-- React and ReactDOM from CDN -->
+    <script src="./react/react.js"></script>
+    <script src="./react-dom/react-dom.js"></script>
+
+    <!-- Babel for JSX support -->
+    <script src="./babel/babel.js"></script>
+    <!-- Tailwindcss for styles -->
+    <script src="./tailwind/tailwindcss.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 100px;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- JSX Script with Babel -->
+    <script type="text/babel">
+      class Counter extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            count: 5,
+          };
+        }
+
+        render() {
+          return (
+            <div>
+              <h1 className="text-red-700 font-bold">hello world</h1>
+            </div>
+          );
+        }
+      }
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<Counter />);
+    </script>
+  </body>
+</html>

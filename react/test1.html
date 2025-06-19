@@ -1,27 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React with CDN</title>
-    <script src="./react/react.js"></script>
-    <script src="./react-dom/react-dom.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>React Counter Class</title>
+
+  <!-- React and ReactDOM from CDN -->
+  <script src="./react/react.js"></script>
+  <script src="./react-dom/react-dom.js"></script>
+
+  <!-- Babel for JSX support -->
+  <script src="./babel/babel.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    button {
+      padding: 10px 30px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <div id="root"></div>
+  <div id="root"></div>
 
-    <script>
-        // Create a React element
-        const element = React.createElement(
-            'p',
-            { id: 'hello' },
-            'Hello World!'
-        );
+  <!-- JSX Script with Babel -->
+  <script type="text/babel">
+  class Counter extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        count: 5,
+        flashRed: false
+      };
+    }
 
-        // Render the application
-        const container = document.querySelector('#root');
-        const root = ReactDOM.createRoot(container);
-        root.render(element);
-    </script>
+    handleClick = () => {
+      const { count } = this.state;
+
+      if (count > 0) {
+        this.setState({ count: count - 1 });
+      } else {
+        alert('Counter is already at 0!');
+        this.setState({ flashRed: true });
+
+        // After 2 seconds, turn color back to black
+        setTimeout(() => {
+          this.setState({ flashRed: false });
+        }, 2000);
+      }
+    };
+
+    render() {
+      const { count, flashRed } = this.state;
+
+      return (
+        <div>
+          <h1 style={{ color: flashRed ? 'red' : 'black' }}>
+            Count: {count}
+          </h1>
+          <button onClick={this.handleClick}>
+            Decrease
+          </button>
+        </div>
+      );
+    }
+  }
+
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(<Counter />);
+</script>
 </body>
 </html>
