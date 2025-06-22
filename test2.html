@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Typing Practice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <header class="flex justify-between items-center mb-6 pb-4 border-b border-gray-700">
+            <h1 class="text-2xl font-light">Code Typing Practice</h1>
+            <div class="flex gap-2">
+                <button id="resetBtn" class="bg-gray-700 hover:bg-blue-600 text-white px-4 py-2 rounded flex items-center gap-2 transition">
+                    Reset
+                </button>
+                <button id="editBtn" class="bg-gray-700 hover:bg-blue-600 text-white px-4 py-2 rounded flex items-center gap-2 transition">
+                    Edit Code
+                </button>
+            </div>
+        </header>
+        
+        <div class="stats flex gap-6 mb-6 bg-gray-800 p-4 rounded">
+            <div class="stat">
+                <div class="text-sm text-gray-400">Accuracy</div>
+                <div id="accuracy" class="text-xl font-bold">0%</div>
+            </div>
+            <div class="stat">
+                <div class="text-sm text-gray-400">Progress</div>
+                <div id="progress" class="text-xl font-bold">0%</div>
+            </div>
+            <div class="stat">
+                <div class="text-sm text-gray-400">Characters</div>
+                <div id="charCount" class="text-xl font-bold">0/0</div>
+            </div>
+        </div>
+        
+        <!-- Edit Mode -->
+        <div id="editMode" class="mb-6">
+            <div class="flex justify-between items-center mb-2">
+                <h2 class="text-lg">Edit Practice Code</h2>
+                <button id="startPracticeBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+                    Start Practice
+                </button>
+            </div>
+            <textarea id="codeEditor" class="w-full h-64 p-4 bg-gray-800 text-gray-100 font-mono rounded" spellcheck="false">function fibonacci(n) {
+    if (n <= 1) return n;
+    
+    let a = 0, b = 1;
+    for (let i = 2; i <= n; i++) {
+        const temp = a + b;
+        a = b;
+        b = temp;
+    }
+    return b;
+}
+
+console.log(fibonacci(10));</textarea>
+        </div>
+        
+        <!-- Practice Mode -->
+        <div id="practiceMode" class="hidden">
+            <div class="reference-code mb-4 p-4 bg-gray-800 rounded font-mono whitespace-pre overflow-x-auto" id="referenceCode"></div>
+            
+            <div class="relative">
+                <textarea id="typingInput" class="w-full h-64 p-4 bg-gray-800 text-transparent caret-white font-mono rounded resize-none" spellcheck="false"></textarea>
+                <div id="typingOverlay" class="absolute inset-0 p-4 pointer-events-none font-mono whitespace-pre overflow-hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elements
+            const editMode = document.getElementById('editMode');
+            const practiceMode = document.getElementById('practiceMode');
+            const codeEditor = document.getElementById('codeEditor');
+            const referenceCode = document.getElementById('referenceCode');
+            const typingInput = document.getElementById('typingInput');
+            const typingOverlay = document.getElementById('typingOverlay');
+            const accuracyEl = document.getElementById('accuracy');
+            const progressEl = document.getElementById('progress');
+            const charCountEl = document.getElementById('charCount');
+            const resetBtn = document.getElementById('resetBtn');
+            const editBtn = document.getElementById('editBtn');
+            const startPracticeBtn = document.getElementById('startPracticeBtn');
+            
+            // State
+            let targetCode = '';
+            let typedCode = '';
+            let correctChars = 0;
+            
+            // Initialize
+            function initPractice() {
+                targetCode = codeEditor.value;
+                referenceCode.textContent = targetCode;
+                typingInput.value = '';
+                typedCode = '';
+                correctChars = 0;
+                updateStats();
+                updateOverlay();
+                typingInput.focus();
+            }
+            
+            // Update stats
+            function updateStats() {
+                const accuracy = typedCode.length > 0 
+                    ? Math.round((correctChars / typedCode.length) * 100) 
+                    : 0;
+                const progress = targetCode.length > 0 
+                    ? Math.round((typedCode.length / targetCode.length) * 100) 
+                    : 0;
+                
+                accuracyEl.textContent = `${accuracy}%`;
+                progressEl.textContent = `${progress}%`;
+                charCountEl.textContent = `${typedCode.length}/${targetCode.length}`;
+            }
+            
+            // Update typing overlay
+            function updateOverlay() {
+                let html = '';
+                
+                // Process typed characters
+                for (let i = 0; i < typedCode.length; i++) {
+                    const char = typedCode[i];
+                    const targetChar = targetCode[i];
+                    
+                    if (char === targetChar) {
+                        html += `<span class="text-green-400">${escapeHtml(char)}</span>`;
+                    } else {
+                        html += `<span class="text-red-400 underline">${escapeHtml(char)}</span>`;
+                    }
+                }
+                
+                // Add remaining code with current character highlighted
+                if (typedCode.length < targetCode.length) {
+                    const remaining = targetCode.substring(typedCode.length);
+                    const nextChar = remaining[0];
+                    const rest = remaining.substring(1);
+                    
+                    html += `<span class="bg-gray-600 rounded">${escapeHtml(nextChar)}</span>`;
+                    html += escapeHtml(rest);
+                }
+                
+                // Replace newlines and tabs
+                typingOverlay.innerHTML = html.replace(/\n/g, '<br>').replace(/\t/g, '    ');
+            }
+            
+            // Escape HTML
+            function escapeHtml(text) {
+                return text.replace(/&/g, "&amp;")
+                          .replace(/</g, "&lt;")
+                          .replace(/>/g, "&gt;")
+                          .replace(/"/g, "&quot;")
+                          .replace(/'/g, "&#039;");
+            }
+            
+            // Handle auto-indentation on space after line completion
+            function handleAutoIndent(currentPos) {
+                // Check if we're at the end of a line (before pressing space)
+                const lines = typingInput.value.substr(0, currentPos).split('\n');
+                const currentLine = lines[lines.length - 1];
+                
+                // If the line ends with an opening brace and we press space
+                if (currentLine.trim().endsWith('{') && currentLine.trim() !== currentLine) {
+                    // Get the indentation from the target code
+                    const targetLines = targetCode.split('\n');
+                    const targetLineIndex = lines.length - 1;
+                    
+                    if (targetLineIndex < targetLines.length) {
+                        const targetLine = targetLines[targetLineIndex];
+                        const indent = targetLine.match(/^\s*/)[0];
+                        
+                        // Insert the correct indentation
+                        typingInput.value = typingInput.value.substring(0, currentPos) + indent;
+                        typingInput.setSelectionRange(currentPos + indent.length, currentPos + indent.length);
+                        return true;
+                    }
+                }
+                return false;
+            }
+            
+            // Event Listeners
+            typingInput.addEventListener('input', function() {
+                typedCode = typingInput.value;
+                
+                // Count correct characters
+                correctChars = 0;
+                for (let i = 0; i < typedCode.length; i++) {
+                    if (typedCode[i] === targetCode[i]) {
+                        correctChars++;
+                    }
+                }
+                
+                updateStats();
+                updateOverlay();
+            });
+            
+            typingInput.addEventListener('keydown', function(e) {
+                const currentPos = typingInput.selectionStart;
+                
+                // Handle spacebar
+                if (e.key === ' ') {
+                    // First try to handle auto-indent
+                    if (handleAutoIndent(currentPos)) {
+                        e.preventDefault();
+                        const event = new Event('input');
+                        typingInput.dispatchEvent(event);
+                        return;
+                    }
+                    
+                    // Default space behavior
+                    e.preventDefault();
+                    typingInput.value = typingInput.value.substring(0, currentPos) + ' ' + typingInput.value.substring(currentPos);
+                    typingInput.setSelectionRange(currentPos + 1, currentPos + 1);
+                    
+                    const event = new Event('input');
+                    typingInput.dispatchEvent(event);
+                }
+                
+                // Handle Enter key
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    
+                    // Find next newline in target code
+                    const remaining = targetCode.substring(typedCode.length);
+                    const nextNewline = remaining.indexOf('\n');
+                    
+                    if (nextNewline >= 0) {
+                        // Insert up to and including the newline
+                        const toInsert = remaining.substring(0, nextNewline + 1);
+                        typingInput.value = typingInput.value.substring(0, currentPos) + toInsert;
+                        typingInput.setSelectionRange(currentPos + toInsert.length, currentPos + toInsert.length);
+                        
+                        const event = new Event('input');
+                        typingInput.dispatchEvent(event);
+                    }
+                }
+            });
+            
+            startPracticeBtn.addEventListener('click', function() {
+                editMode.classList.add('hidden');
+                practiceMode.classList.remove('hidden');
+                initPractice();
+            });
+            
+            editBtn.addEventListener('click', function() {
+                practiceMode.classList.add('hidden');
+                editMode.classList.remove('hidden');
+                codeEditor.focus();
+            });
+            
+            resetBtn.addEventListener('click', function() {
+                if (!practiceMode.classList.contains('hidden')) {
+                    initPractice();
+                }
+            });
+            
+            // Initialize in edit mode
+            codeEditor.focus();
+        });
+    </script>
+</body>
+</html>

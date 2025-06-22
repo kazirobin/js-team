@@ -1,0 +1,28 @@
+- html
+- css
+- js
+- bootstrap
+- tailwindcss
+- daisi ui shadcn ui hero ui metarial ui cokro ui
+- react.... component prop  reducer hook context api 
+- what is react under the hood ....
+- virtual dom
+- **Typescript**
+- **Next js**
+- jest
+- css module
+- 3d
+- **gsap... framer motion**
+- swiper js
+- react-router-dom 
+-  **Redux**
+- date fns
+- moment js
+- react pdf 
+- react icon
+- losid react
+- hero icon
+- 
+- data visualization... graph_chart... animation...
+- 
+- 

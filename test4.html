@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Code Typing</title>
+    <style>
+        body { font-family: monospace; background: #222; color: #eee; }
+        #code { background: #333; padding: 10px; white-space: pre; }
+        #input { width: 100%; height: 100px; background: #444; color: transparent; caret-color: white; }
+        #overlay { position: absolute; top: 0; left: 0; pointer-events: none; }
+        .correct { color: #0f0; }
+        .wrong { color: #f00; text-decoration: underline; }
+        .current { background: #555; }
+    </style>
+</head>
+<body>
+    <div id="code"></div>
+    <div style="position: relative;">
+        <textarea id="input"></textarea>
+        <div id="overlay"></div>
+    </div>
+
+    <script>
+        const code = `function sum(a, b) {
+    return a + b;
+}`;
+        
+        const codeEl = document.getElementById('code');
+        const inputEl = document.getElementById('input');
+        const overlayEl = document.getElementById('overlay');
+        
+        codeEl.textContent = code;
+        
+        inputEl.addEventListener('input', () => {
+            const typed = inputEl.value;
+            let html = '';
+            
+            for (let i = 0; i < typed.length; i++) {
+                const char = typed[i];
+                const targetChar = code[i];
+                
+                if (char === targetChar) {
+                    html += `<span class="correct">${escapeHtml(char)}</span>`;
+                } else {
+                    html += `<span class="wrong">${escapeHtml(char)}</span>`;
+                }
+            }
+            
+            if (typed.length < code.length) {
+                html += `<span class="current">${escapeHtml(code[typed.length])}</span>`;
+                html += escapeHtml(code.substring(typed.length + 1));
+            }
+            
+            overlayEl.innerHTML = html.replace(/\n/g, '<br>');
+        });
+        
+        function escapeHtml(text) {
+            return text.replace(/&/g, "&amp;")
+                      .replace(/</g, "&lt;")
+                      .replace(/>/g, "&gt;");
+        }
+        
+        inputEl.focus();
+    </script>
+</body>
+</html>

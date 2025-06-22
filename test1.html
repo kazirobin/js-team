@@ -41,26 +41,21 @@
         flashRed: false
       };
     }
-
     handleClick = () => {
       const { count } = this.state;
-
       if (count > 0) {
         this.setState({ count: count - 1 });
       } else {
         alert('Counter is already at 0!');
         this.setState({ flashRed: true });
-
         // After 2 seconds, turn color back to black
         setTimeout(() => {
           this.setState({ flashRed: false });
         }, 2000);
       }
     };
-
     render() {
       const { count, flashRed } = this.state;
-
       return (
         <div>
           <h1 style={{ color: flashRed ? 'red' : 'black' }}>
