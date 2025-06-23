@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Banner with Foreground Hover Effect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    .move-on-hover {
+      transition: transform 0.2s ease-out;
+      will-change: transform;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <!-- Banner Section -->
+  <section
+    id="banner"
+    class="relative w-full h-[500px] bg-cover bg-center"
+    style="background-image: url('./bg.jpg')"
+  >
+
+    <!-- Foreground Shape Left -->
+    <img
+      src="./background.svg"
+      alt="Shape Left"
+      id="shapeLeft"
+      class="absolute top-0 -left-60 w-90 h-auto z-10 move-on-hover"
+    />
+
+    <!-- Foreground Shape Right -->
+    <img
+      src="./foreground.png"
+      alt="Shape Right"
+      id="shapeRight"
+      class="absolute -top-20 -right-20 w-90 h-auto z-10 move-on-hover rotate-190"
+    />
+
+    <!-- Center Content -->
+    <div class="relative z-20 flex items-center justify-center h-full">
+      <div class="text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Creative Interactive Banner</h1>
+        <p class="text-lg text-gray-300">Foreground shapes move gently with your mouse</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script for mouse movement -->
+  <script>
+    const banner = document.getElementById("banner");
+    const shapeLeft = document.getElementById("shapeLeft");
+    const shapeRight = document.getElementById("shapeRight");
+
+    let mouseX = 0, mouseY = 0;
+
+    banner.addEventListener("mousemove", (e) => {
+      const rect = banner.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+      const moveX = x * 20; // Adjust movement sensitivity
+      const moveY = y * 20;
+
+      shapeLeft.style.transform = `translate(${moveX}px, ${moveY}px)`;
+      shapeRight.style.transform = `translate(${-moveX}px, ${moveY}px)`;
+    });
+  </script>
+
+</body>
+</html>
